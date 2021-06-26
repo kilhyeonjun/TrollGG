@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.troll.gg.mapper.SearchMapper">
+
+	<insert id="summonerInsert" parameterType="kr.troll.gg.dto.Summoner">
+		INSERT INTO summoner
+		(profileIconId, name, puuid, summonerLevel, revisionDate, id, accountId)
+		VALUES
+		(#{profileIconId},#{name},#{puuid},#{summonerLevel},#{revisionDate},#{id},#{accountId})
+	</insert>
+	<select id="summonerSelect" parameterType="String" resultType="kr.troll.gg.dto.Summoner">
+		SELECT
+			*
+		FROM
+		summoner
+		WHERE 1=1
+		<if test="value != null and value != ''"> AND REPLACE(name, ' ', '') LIKE CONCAT('%',#{value} ,'%') </if>
+	</select>
+</mapper>

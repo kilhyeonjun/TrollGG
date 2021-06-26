@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+#searchUser{
+	border: 0;
+}
+#searchUser:focus{
+	outline: none;
+}
+#home_search_button {
+	background-color: #00A9FF;
+	color: white;
+	border: none;
+	border-radius: 1px;
+	height: 30px;
+	font-style: bold;
+	position:absolute;
+	top:295px;
+	left:66%;
+}
+.search_button{
+	background-color: #00A9FF;
+	color: white;
+	border: none;
+	border-radius: 1px;
+	height: 30px;
+	font-style: bold;
+}
+
+#home_search_button:focus {
+	outline: none;
+}
+
+#home_hot_post_container{
+	background-color: white;
+	width: 800px;
+	border-radius: 2px;
+}
+
+#post_comment_count{
+	color: #54B9EA;
+}
+
+#post_timestamp{
+	color: #879292;
+	font-size: 10px;
+}
+
+#username{
+	margin-left:15px;
+	color: #879292;
+	font-size: 10px;
+}
+
+.mostChampion {
+	margin-right: 10px;
+} 
+
+
+.tiny_gray_text{
+	color: #879292;
+	font-size: 12px;
+}
+.mContainer{
+	margin: 3% 15% 0 15%;
+}

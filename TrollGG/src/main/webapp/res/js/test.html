@@ -1,0 +1,148 @@
+<!-- 전적 시작 -->
+<div id="search" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 10px;">
+    <!-- 전적 박스 -->
+    <div id="searchBox" style="display: flex; border: 1px solid #bcbcbc; background-color: #A3CFEC; width: 100%;">
+        <!-- 겜 정보 -->
+        <div
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 10px; margin: 10px 10px 10px 0; width: 14%">
+            <div id="gameSort" style="white-space: nowrap;">게임종류</div>
+            <div id="gameTime">하루 전</div>
+            <hr style="width: 20px;" />
+            <div id="winOrLose" style="color: #1A85C4;">승리</div>
+            <div id="gameDuration">18분 1초</div>
+        </div>
+
+        <!-- 챔피언, 스펠, 룬 -->
+        <div
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; width: 15%;">
+            <div style="display: flex;">
+                <img id="boxChampImg" class="circle_image" src="img/Jayce.png"
+                    style="width: 50px; height: 50px; margin-right: 5px; border-radius: 30px;" />
+                <!-- 스펠 -->
+                <div style="display: flex; flex-direction: column; margin-right: 5px;">
+                    <img id="spellD" src="" style="width: 25px; height: 25px;" /> <img id="spellF" src=""
+                        style="width: 25px; height: 25px;" />
+                </div>
+                <!-- 룬 -->
+                <div style="display: flex; flex-direction: column;">
+                    <img id="RuneMain" src="img/pic1.png" style="width: 25px; height: 25px; border-radius: 30px;" /> <img
+                        id="RuneSub" src="img/pic1.png" style="width: 25px; height: 25px; border-radius: 30px;" />
+                </div>
+            </div>
+            <div id="boxChampionName" style="font-size: 12px; margin-top: 5px;">챔프이름</div>
+        </div>
+
+
+        <!-- 킬뎃 -->
+        <div
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-right: 20px; width: 11%;">
+            <div
+                style="display: flex; justify-content: center; align-items: center; font-size: 13px; font-weight: bold; color: gray; margin-bottom: 5px;">
+                <div id="boxKill">12</div>
+                /
+                <div id="boxDeath" style="color: red;">8</div>
+                /
+                <div id="boxAssist">15</div>
+            </div>
+            <div
+                style="display: flex; justify-content: center; align-items: center; font-size: 11px; font-weight: bold; color: gray; margin-bottom: 5px;">
+                <div id="boxKda" style="color: black; white-space: nowrap;">3.38:1</div>
+                <div style="font-weight: normal; font-size: 10px; white-space: nowrap;">평점</div>
+            </div>
+            <div id="boxMkill"
+                style="display: flex; justify-content: center; align-items: center; background-color: #EE5A52; color: white; border-radius: 15px; width: 50px; height: 20px; font-size: 11px;">더블킬</div>
+        </div>
+
+        <!-- 레벨, cs, 킬관여 -->
+        <div
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; color: gray; font-size: 11px; margin-right: 20px;">
+            <div id="boxLevel" style="margin-bottom: 5px;">레벨 18</div>
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 5px;">
+                <div id="boxCs">100</div>
+                <div id="boxCsPer">(4.7)</div>
+                CS
+            </div>
+            <div id="boxKillRel" align="center"
+                style="color: red; margin-bottom: 5px; font-size: 10px; white-space: nowrap; font-weight: bold;">킬관여</div>
+        </div>
+
+        <!-- 아이템 -->
+        <div
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-right: 15px; width: 10%; width: 15%;">
+            <!-- 아이템 위층 -->
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div style="width: 25px; height: 25px; background-color: #9e9e9e; border-radius: 5px; margin: 0 1px 2px 1px;">
+                    <img id="boxItem1" style="border-radius: 5px; opacity: 1; width: 25px; height: 25px;" src="" />
+                </div>
+                <div style="width: 25px; height: 25px; background-color: #9e9e9e; border-radius: 5px; margin: 0 1px 2px 1px;">
+                    <img id="boxItem2" style="border-radius: 5px; opacity: 1; width: 25px; height: 25px;" src="" />
+                </div>
+                <div style="width: 25px; height: 25px; background-color: #9e9e9e; border-radius: 5px; margin: 0 1px 2px 1px;">
+                    <img id="boxItem3" style="border-radius: 5px; opacity: 1; width: 25px; height: 25px;" src="" />
+                </div>
+                <!-- 와드, 장신구 7번 박스 -->
+                <div style="width: 25px; height: 25px; background-color: #9e9e9e; border-radius: 5px; margin: 0 1px 2px 1px;">
+                    <img id="boxItem7" style="border-radius: 5px; opacity: 1; width: 25px; height: 25px;" src="" />
+                </div>
+            </div>
+            <!-- 아이템 아래층 -->
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div style="width: 25px; height: 25px; background-color: #9e9e9e; border-radius: 5px; margin: 0 1px 2px 1px;">
+                    <img id="boxItem4" style="border-radius: 5px; opacity: 1; width: 25px; height: 25px;" src="" />
+                </div>
+                <div style="width: 25px; height: 25px; background-color: #9e9e9e; border-radius: 5px; margin: 0 1px 2px 1px;">
+                    <img id="boxItem5" style="border-radius: 5px; opacity: 1; width: 25px; height: 25px;" src="" />
+                </div>
+                <div style="width: 25px; height: 25px; background-color: #9e9e9e; border-radius: 5px; margin: 0 1px 2px 1px;">
+                    <img id="boxItem6" style="border-radius: 5px; opacity: 1; width: 25px; height: 25px;" src="" />
+                </div>
+                <div style="width: 25px; height: 25px;">
+                    <img id="boxItemBuild" src="img/searchbuild.png" style="width: 25px; height: 25px; margin: 0 1px 2px 1px;" />
+                </div>
+            </div>
+        </div>
+
+        <!-- 팀원 -->
+        <div style="display: flex; justify-content: center; align-items: center; width: 30%;">
+            <!-- 블루팀 -->
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin-right: 10px;">
+                <!-- 1 -->
+                <c:forEach var="a" begin="0" end="4" step="1">
+                    <div
+                        style="display: flex; justify-content: center; align-items: center; font-size: 10px; color: gray; margin-bottom: 3px;">
+                        <img id="boxBlueTeamChampImg${a}" src="http://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/Aatrox.png"
+                            style="width: 15px; height: 15px; margin-right: 3px;" />
+                        <div id="boxBlueTeamName${a}"
+                            style="width: 70px; display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">소환사 이름</div>
+                    </div>
+                </c:forEach>
+            </div>
+
+            <!-- 레드팀 -->
+            <div
+                style="display: flex; justify-content: flex-start; align-items: flex-start; flex-direction: column; margin-right: 5px;">
+                <!-- 1 -->
+                <c:forEach var="b" begin="5" end="9" step="1">
+                    <div
+                        style="display: flex; justify-content: center; align-items: center; font-size: 10px; color: gray; margin-bottom: 3px;">
+                        <img id="boxRedTeamChampImg${b}" src="http://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/Aatrox.png"
+                            style="width: 15px; height: 15px; margin-right: 3px;" />
+                        <div id="boxRedTeamName${b}"
+                            style="width: 70px; display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">소환사 이름</div>
+                    </div>
+                </c:forEach>
+            </div>
+        </div>
+
+        <!-- 전적 토글 버튼 -->
+        <a id="search" class="a_search" href='javascript:doDisplay();'
+            style="border: 1px solid #5ca7d6; background-color: #64B1E4; width: 5%; display: flex; justify-content: center; align-items: flex-end;">
+            <img id="moreButton" src="/resource/res/img/winMore.png" style="width: 20px; height: 20px;" />
+        </a>
+    </div>
+    
+
+    <!-- 전적 상세 -->
+    <!-- ============================================================================================================= -->
+</div>
+<!-- 전적박스 끝 -->
